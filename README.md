@@ -30,17 +30,36 @@ git commit -m "Primeiro commit"
 git remote add origin https://github.com/seu-usuario/repo.git
 git push -u origin main
 ```
-### 📚 Índice de Comandos
+
+## 📚 Índice de Comandos Git
+
+| Seção               | Comando-chave                     | Descrição                          |
+|---------------------|-----------------------------------|------------------------------------|
+| **🌿 Branching**    | `git checkout -b nova-feature`    | Cria e muda para nova branch       |
+| **🕰️ Histórico**   | `git log --oneline --graph --all` | Histórico visual compacto          |
+| **⏪ Desfazer**     | `git restore arquivo`             | Descarta mudanças não commitadas   |
+| **🏷️ Tags**        | `git tag -a v1.0 -m "Versão 1.0"`| Cria tag anotada para releases     |
+| **📊 Status**       | `git status -sb`                  | Status resumido + branch atual     |
+| **🌐 Remote**       | `git remote -v`                   | Lista repositórios remotos         |
+| **🔄 Merge**        | `git merge --no-ff feature`       | Merge não-fast-forward             |
+| **📤 Push**         | `git push -u origin main`         | Primeiro push para branch remota   |
+| **📥 Pull**         | `git pull --rebase`               | Atualiza com rebase                |
+| **🔍 Diff**         | `git diff --color-words`          | Mostra mudanças por palavra        |
+| **🧹 Clean**        | `git clean -fd`                   | Remove arquivos não rastreados     |
+| **🗃️ Stash**       | `git stash push -m "mensagem"`    | Armazena mudanças temporárias      |
+
 
 ### 🌐 Dois Métodos de Autenticação
 ```bash
 Método HTTPS (com token)
 git remote set-url origin https://SEU_TOKEN@github.com/usuario/repo.git
 ```
+
 ```bash
 Método SSH (recomendado)
 git remote set-url origin git@github.com:usuario/repo.git
 ```
+
 ### 🛠️ Solução de Problemas
 ```bash
 Erro: "Updates were rejected"
@@ -48,15 +67,18 @@ git pull --rebase origin main
 git push
 ```
 
+
 ```bash
 Repositório corrompido
 git fsck  # Verifica integridade
 git gc    # Limpeza
 ```
 
-📜 Licença
-Este trabalho está licenciado sob Creative Commons Attribution-ShareAlike 4.0 International License.
+
+### 📜 Licença
+Este trabalho está licenciado sob Creative Commons Attribution-ShareAlike 4.0 International License.<br>
 [![Licença: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
 
 
 ### ✨ Contribuição
@@ -66,8 +88,11 @@ Este trabalho está licenciado sob Creative Commons Attribution-ShareAlike 4.0 I
 - Push para a branch (git push origin feature/novo-topico)
 - Abra um Pull Request
 
+  
+
 ### 📬 Contato
 Dúvidas? Abra uma issue ou envie um e-mail para contato@hunnilysoft.com.br
+
 
 
 ### Como usar este template:
